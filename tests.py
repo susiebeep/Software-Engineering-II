@@ -8,6 +8,11 @@ class TestCase(unittest.TestCase):
         password = ''
         self.assertFalse(check_pwd(password))
 
+    # check short passwords (length 7)
+    def test_2(self):
+        password = 'abcdefg'
+        self.assertFalse(check_pwd(password))
+
 
 if __name__ == '__main__':
     unittest.main()
