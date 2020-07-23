@@ -1,2 +1,6 @@
 def check_pwd(password):
-    return True
+    # reject empty passwords
+    if len(password) == 0:
+        return False
+    else:
+        return True
