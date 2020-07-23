@@ -13,6 +13,11 @@ class TestCase(unittest.TestCase):
         password = 'abcdefg'
         self.assertFalse(check_pwd(password))
 
+    # check long passwords (length 21)
+    def test_3(self):
+        password = 'abcdefghijklmnopqrstu'
+        self.assertFalse(check_pwd(password))
+
 
 if __name__ == '__main__':
     unittest.main()
