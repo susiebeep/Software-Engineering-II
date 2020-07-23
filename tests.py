@@ -3,6 +3,7 @@ from check_pwd import check_pwd
 
 
 class TestCase(unittest.TestCase):
+
     # check empty passwords
     def test_1(self):
         password = ''
@@ -41,4 +42,3 @@ class TestCase(unittest.TestCase):
 
 if __name__ == '__main__':
     unittest.main()
-
