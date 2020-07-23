@@ -28,6 +28,12 @@ class TestCase(unittest.TestCase):
         password = 'password'
         self.assertFalse(check_pwd(password))
 
+    # check for at least one digit
+    def test_6(self):
+        password = 'Password'
+        self.assertFalse(check_pwd(password))
+
+
 
 if __name__ == '__main__':
     unittest.main()
