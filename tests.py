@@ -33,6 +33,10 @@ class TestCase(unittest.TestCase):
         password = 'Password'
         self.assertFalse(check_pwd(password))
 
+    # check for at least one symbol
+    def test_7(self):
+        password = 'Password123'
+        self.assertFalse(check_pwd(password))
 
 
 if __name__ == '__main__':
